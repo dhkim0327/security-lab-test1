@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security CRUD Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Security CRUD Lab</h1>
+
+<div class="form">
+    <input id="username" placeholder="사용자 이름">
+    <input id="role" placeholder="권한 (admin/user)">
+
+    <button onclick="createUser()">Create</button>
+</div>
+
+
+<h2>User List</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="userList"></tbody>
+
+</table>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
